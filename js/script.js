@@ -1,41 +1,12 @@
-$(function(){
-	
-	var
-	  winW = $(window).width(),
-		winH = $(window).height(),
-		nav = $('#mainnav ul a'),
-		curPos = $(this).scrollTop();
-	
-	if (winW > 880){
-		var headerH =20;
-	}
-	else{
-		var headerH =60;
-	}
-	
-	$(nav).on('click', function(){
-		nav.removeClass('active');
-  	var $el = $(this),
-		id = $el.attr('href');
- 		$('html, body').animate({
-   		scrollTop: $(id).offset().top - headerH
- 		}, 500);
-		$(this).addClass('active');
-		if (winW < 880){
-			$('#menuWrap').next().slideToggle();
-			$('#menuBtn').removeClass('close');
-		}
- 		return false;
+	$('.slider').slick({
+		autoplay: true,//自動的に動き出すか。初期値はfalse。
+		infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+		speed: 500,//スライドのスピード。初期値は300。
+		slidesToShow: 3,//スライドを画面に3枚見せる
+		slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+		prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+		nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+		centerMode: true,//要素を中央ぞろえにする
+		variableWidth: true,//幅の違う画像の高さを揃えて表示
+		dots: true,//下部ドットナビゲーションの表示
 	});
-	
-	$('.panel').hide();
-	$('#menuWrap').toggle(function(){
-		$(this).next().slideToggle();
-		$('#menuBtn').toggleClass('close');
-	},
-	function(){
-		$(this).next().slideToggle();
-		$('#menuBtn').removeClass('close');
-	});
-
-});
