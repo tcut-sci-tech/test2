@@ -7,16 +7,115 @@ body {
   padding: 0;
 }
 
-ul{
-	margin:0;
-	padding: 0;
-	list-style: none;
+h1 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 6vw;
+  text-align: center;
+  font-weight: 800;
+  color: #2857b1;
 }
 
-a{
-	color: #333;
-	text-decoration: none;
-    outline: none;
+h2 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 5.5vw;
+  text-align: left;
+  font-weight: 800;
+  color: #2857b1;
+}
+
+h3 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+}
+
+h4 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 4vw;
+  text-align: center;
+  font-weight: 800;
+  color: #2857b1;
+}
+
+BL {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 4vw;
+  text-align: center;
+  font-weight: 800;
+  color: #000;
+}
+
+SAT {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 4vw;
+  text-align: center;
+  font-weight: 800;
+  color: #0000ff;
+}
+
+SUN {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 4vw;
+  text-align: center;
+  font-weight: 800;
+  color: #ff0000;
+}
+
+h5 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 3.5vw;
+  text-align: left;
+  font-weight: 800;
+  color: #00a7eb;
+}
+
+ku {
+  font-size: 2vw;
+  font-weight: 500;
+  color: #000;
+}
+
+a {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 1.7vw;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 2vw;
+  font-weight: 500;
+  color: #000;
+}
+
+txt1 {
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 2vw;
+  font-weight: 500;
+  color: #000;
+}
+
+txt3{
+  margin: 0 0 0 0;
+  position: relative;
+  font-size: 2.3vw;
+  font-weight: 700;
+  color: #000;
 }
 
 img{
@@ -24,13 +123,14 @@ img{
     height: auto;
 }
 
+/*---------- 文字 ---------- */
 #container{
     overflow-x: hidden;
 }
 
-/*---------- ヘッダー ---------- */
 #header{
   background:#fff;
+  height:94px;
 }
 
 #header h1{
@@ -97,7 +197,7 @@ img{
 }
 
 #header ul#utility-navi li img{
-  width:35%;
+  width:60%;
 }
 
 #header ul#utility-navi li:last-child a{
@@ -106,267 +206,6 @@ img{
 
 #header ul#utility-navi li:last-child a:hover{
   opacity: 0.75;
-}
-
-/* lead */
-
-#lead{
-    position: relative;
-    padding: 150px 0 0 0;
-    height:100vh;
-    
-}
-
-#slider-area{
-    width:70%;
-    height: 70vh;
-    position: relative;
-    top: 0;
-    left:15%;    
-    z-index: -1;
-}
-
-#slider-area #slider{
-    width:100%;
-    height:70vh;
-}
-
-#lead h2.heading{
-     position: absolute;
-    top:200px;
-     right:10%;
-}
-
-#lead .lead{
-     position: absolute;
-    top:320px;
-     right:4%;
-    font-size: 2rem;
-    letter-spacing: 0.2em;
-    line-height: 1.6;
-    -ms-writing-mode: tb-rl;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-    white-space: nowrap;
-}
-
-#lead .lead span{
-     display: block; 
-    padding: 100px 0 0 0;
-}
-
-/* new */
-
-#news{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background:#fff;
-    width:40%;
-    z-index: 2;
-    padding: 40px;
-}
-
-#news h2{
-    position: relative;
-    font-size:1.2rem;
-    margin: 0 0 30px 0;
-}
-
-#news h2::before{
-    content:'';
-    position: absolute;
-    width:30px;
-    height: 1px;
-    background: #182578;
-    left:0;
-    bottom:-5px;
-}
-
-#news li{
-    margin:0 0 10px 0;
-}
-
-#news li a{
-    transition: all .3s;
-}
-
-#news li a:hover{
-     background:#efefef;
-}
-
-#news li time{
-    display: inline-block;
-    padding:0 20px 0 0;  
-    font-size:0.8rem;
-    color: #999;
-}
-
-@media screen and (max-width:1200px) {
-    #lead .lead{
-        font-size:1.8rem;
-        right: 2.5%;
-    }
-    #news{
-        width:50%;
-    } 
-}
-
-@media screen and (max-width:960px) {
-    #lead .lead{
-        font-size:1.6rem;
-        right: 3%;
-    }
-    #news{
-        padding: 20px 30px;
-    }
-    #news li time{
-        display: block;
-    }  
-}
-
-@media screen and (max-width:768px) {
-#slider-area {
-    width: 74%;
-    height: 90vh;
-    left: 0;
-    }
-    #slider-area #slider{
-    height: 90vh;
-}
-    
-#lead h2.heading{
-    top: 160px;
-}
-    
-#lead{
-    padding:100px 0 0 0;
-}
-    
-#lead .lead{
-    right:7%;
-    top:260px;
-}
-
-#news{
-    width:100%;
-    bottom:-200px;
-}
-}
-
-@media screen and (max-width:550px) {
-
-#lead .lead {
-    font-size: 1.3rem;
-    right:5%;
-
-} 
-}
-
-@media screen and (max-width:350px) {
-#lead .lead {
-    right:2%;
-} 
-    
-}
-
-/* service */
-
-#service{
-    position: relative;
-    text-align: center;
-    padding: 100px 0 0 0;
-    
-}
-
-#service header{
-    background:#182578;
-    color: #fff;
-    width:90%;
-    padding: 50px 0 100px 0;
-    z-index: 1;
-}
-
-#service header h2{
-    font-size: 1.3rem;
-    margin: 0 0 20px 0;
-    letter-spacing: 0.1em;
-}
-
-#service header p{
-    margin: 0 0 30px 0;   
-}
-
-#service header p br{
-     display: none;   
-}
-
-#service .service-area{
-    background:#fff;
-    padding: 70px;
-    width:70%;
-    position: relative;
-    top:-50px;
-    left: 10%;
-    z-index: 2;
-}
-
-#service .service-area ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-/* スマホ表示用。flipDownを指定している親要素に指定しないとうまく動かない*/
-    transform:  translate3d(0, 0, 0);
-}
-
-#service .service-area ul li{
-    opacity: 0;
-    width:22%;
-    padding: 0 0 50px 0;
-}
-
-#service .service-area ul li a{
-    display: block;
-}
-
-@media screen and (max-width:960px) {
-    #service header{
-        width:100%;
-    }
-    #service .service-area{
-        width:80%;
-        left:10%;
-        padding: 80px 20px 30px 20px;
-    }
-#service .service-area ul li{
-    width:40%;
-    }   
-
-#service header p br{
-     display:block;   
-}
-}
-
-@media screen and (max-width:768px) {
-    #service{
-        padding: 200px 0 0 0;
-    }
-}
-
-@media screen and (max-width:550px) {
-    #service .service-area{
-    width:90%;
-    left:5%;
-    }
-}
-
-@media screen and (max-width:400px) {
-    #service .service-area{
-    width:100%;
-    left:0;
-    font-size: 0.9rem;
-}
-    
 }
 
 /*---------- OP ---------- */
@@ -530,25 +369,22 @@ body.appear #container{
   opacity:1;
 }
 
-/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
 #g-nav.panelactive ul li{
-animation-name:gnaviAnime;
-animation-duration:1s;
-animation-delay:.2s;/*0.2 秒遅らせて出現*/
-animation-fill-mode:forwards;
-opacity:0;
+  animation-name:gnaviAnime;
+  animation-duration:1s;
+  animation-delay:.2s;
+  animation-fill-mode:forwards;
+  opacity:0;
 }
 
-
-/*リストのレイアウト設定*/
 #g-nav li{
-	text-align: center; 
+  text-align: center; 
 	list-style: none;
-    margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
 #g-nav li a{
-	color: #fff;
+  color: #fff;
 	text-decoration: none;
 	padding:10px;
 	display: block;
@@ -558,46 +394,42 @@ opacity:0;
 }
 
 @keyframes gnaviAnime{
-0% {
-opacity: 0;
-}
-100% {
-opacity: 1;
-}
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }
 
-/*===========================================================*/
-/*機能編  5-2-1　3本線が×に*/
-/*===========================================================*/
-
-
+/*---------- ボタン ---------- */
 .openbtn{
-    display: none;
+  display: none;
 }
 
 .openbtn{
-    display: block;
+  display: block;
 	position:fixed;
 	top:0;
 	left:0;
-	z-index: 9999;/*ボタンを最前面に*/
-	cursor: pointer;
-    width: 94px;
-    height:94px;
-    background:#fff000;
+	z-index: 9999;
+  cursor: pointer;
+  width: 94px;
+  height:94px;
+  background:#fff000;
 }
 	
-/*×に変化*/	
 .openbtn span{
   display: inline-block;
-    transition: all .4s;
-    position: absolute;
-    left: 23px;
-    height: 3px;
-    border-radius: 2px;
+  transition: all .4s;
+  position: absolute;
+  left: 23px;
+  height: 3px;
+  border-radius: 2px;
 	background-color: #000;
-  	width: 45%;
-  }
+  width: 45%;
+}
 
 .openbtn span:nth-of-type(1) {
 	top:33px;	
@@ -612,10 +444,10 @@ opacity: 1;
 }
 
 .openbtn.active span:nth-of-type(1) {
-    top: 41px;
-    left: 28px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 30%;
+  top: 41px;
+  left: 28px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
 }
 
 .openbtn.active span:nth-of-type(2) {
@@ -623,8 +455,134 @@ opacity: 1;
 }
 
 .openbtn.active span:nth-of-type(3){
-    top: 52px;
-    left: 28px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 30%;
+  top: 52px;
+  left: 28px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+/*---------- セクション ---------- */
+.sec02 {
+  margin: 0 0 0 0;
+	height: auto;
+	background-color: #dcdcdc;
+}
+
+.sec04 {
+  margin: 0 0 0 0;
+	height: auto;
+	background-color: #2857b1;
+}
+
+/*---------- フッター リンク ---------- */
+.op a:hover{
+	color: #fff;
+	opacity: 0.5;
+}
+
+.twitter a::before{
+  content: '';
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-image: url(https://tcut-sci-tech.github.io/photo/Logo%20twitter.png);  
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 1vw;
+}
+
+.tcu a::before{
+  content: '';
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-image: url(https://tcut-sci-tech.github.io/photo/Logo%20tcu.png);  
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 1vw;
+}
+
+.sci a::before{
+  content: '';
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-image: url(https://tcut-sci-tech.github.io/photo/Logo%20sci.png);  
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 1vw;
+}
+
+/*---------- 画面分割 ---------- */
+.flex_div {
+  display: flex;
+  justify-content: center;
+}
+
+.a_div {
+  display: inline-block;
+  width: 5%;
+  padding:0vw;
+  margin: 0vw 0vw 0vw 0vw;
+}
+
+.a_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.b_div {
+  display: inline-block;
+  width: 90%;
+  padding:0vw;
+  margin: 0vw 0vw 0vw 0vw;
+}
+
+.b_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.c_div {
+  display: inline-block;
+  width: 50%;
+  padding:0vw;
+  margin: 0vw 1vw 0vw 1vw;
+}
+
+.c_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.d_div {
+  display: inline-block;
+  width: 40%;
+  padding:0vw;
+  margin: 0vw 1vw 0vw 1vw;
+}
+
+.d_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.e_div {
+  display: inline-block;
+  width: 70%;
+  padding:0vw;
+  margin: 0vw 1vw 0vw 1vw;
+}
+
+.e_div img {
+  display: inline-block;
+	width: 100%;
+	height: auto;
 }
