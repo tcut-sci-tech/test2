@@ -28,7 +28,7 @@ h2 {
 h3 {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 1.5vw;
+  font-size: 23px;
   text-align: center;
   font-weight: 800;
   color: #fff;
@@ -88,7 +88,7 @@ ku {
 a {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 1.7vw;
+  font-size: 20px;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
