@@ -43,76 +43,68 @@ img{
 }
 
 #g-nav ul{
-    display: flex;
-    padding: 0 0 0 5%;
+  display: flex;
+  padding: 0 0 0 5%;
 }
 
 #g-nav ul li{
   letter-spacing: 0.1em;
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 #g-nav ul li:last-child{
-     display: none;   
+  display: none;   
 }
 
 #g-nav ul li a{
-    display: block;
-    padding:6px 15px;
+  display: block;
+  padding:6px 15px;
 }
 
 #g-nav ul{
-    display: block;
-    padding: 0;
+  display: block;
+  padding: 0;
 }
    
 #g-nav ul li a{
-    padding:6px 15px;
+  padding:6px 15px;
 }
 
 #header ul#utility-navi{
-    position: fixed;
-    top:0;
-    right:0;
-    z-index: 999;
-    display: flex;
-    font-size: 0.8rem;
+  position: fixed;
+  top:0;
+  right:0;
+  z-index: 999;
+  display: flex;
+  font-size: 0.8rem;
 }
 
 #header ul#utility-navi li{
-    text-align: center;
+  text-align: center;
 }
 
 #header ul#utility-navi li span{
-    display: block;
+  display: block;
 }
 
 #header ul#utility-navi li a{
-    color: #fff;
-    padding: 15px 0;
-    display: block;
-    width:100px;
-    transition: all .5s;
+  color: #fff;
+  padding: 15px 0;
+  display: block;
+  width:100px;
+  transition: all .5s;
 }
 
 #header ul#utility-navi li img{
-    width:35%;
-}  
-
-#header ul#utility-navi li:first-child a{
-     background:#666;
-}
-
-#header ul#utility-navi li:first-child a:hover{
-     background:#888;   
+  width:35%;
 }
 
 #header ul#utility-navi li:last-child a{
-     background:#182578;
+  background:#2857b1;
 }
 
 #header ul#utility-navi li:last-child a:hover{
-     background:#1e2f98;
+  opacity: 0.75;
 }
 
 /* lead */
@@ -376,18 +368,12 @@ img{
     
 }
 
-@charset "utf-8";
-/*===========================================================*/
-/*機能編  4-2-6 背景色が伸びる（中央から上下）*/
-/*===========================================================*/
-
-
-/*========= ローディング画面のためのCSS ===============*/
+/*---------- OP ---------- */
 #splash {
-	position: fixed;
+  position: fixed;
 	width: 100%;
 	height: 100%;
-	background:#182578;
+	background:#2857b1;
 	z-index: 9999999;
 	text-align:center;
 	color:#fff;
@@ -398,91 +384,82 @@ img{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-    font-size: 1.2rem;
-    letter-spacing: 0.2em;
 }
 
-/*========= 画面遷移のためのCSS ===============*/
-
-/*画面遷移アニメーション*/
 .splashbg1,
 .splashbg2{
-    display: none;
+  display: none;
 }
 
-/*bodyにappearクラスがついたら出現*/
 body.appear .splashbg1,
 body.appear .splashbg2{
-	display:block;
+  display:block;
 }
 
-/*上に消えるエリア*/
 body.appear .splashbg1{
-	animation-name:PageAnime;
+  animation-name:PageAnime;
 	animation-duration:1.4s;
 	animation-timing-function:ease-in-out;
 	animation-fill-mode:forwards;
-    content: "";
-    position:fixed;
+  content: "";
+  position:fixed;
 	z-index: 999;
-    width: 100%;
-    height: 100vh;
-    bottom:50%;
+  width: 100%;
+  height: 100vh;
+  bottom:50%;
 	left:0;
-    transform: scaleY(1);
-    background-color:#182578;/*伸びる背景色の設定*/
+  transform: scaleY(1);
+  background-color:#2857b1;
 }
 
 @keyframes PageAnime{
-	0% {
-		transform-origin:top;
+  0% {
+    transform-origin:top;
 		transform:scaleY(1);
 	}
 
 	100% {
-		transform-origin:top;
+    transform-origin:top;
 		transform:scaleY(0);
 	}
 }
 
-/*下に消えるエリア*/
 body.appear .splashbg2{
-    animation-name:PageAnime2;
+  animation-name:PageAnime2;
 	animation-duration:1.4s;
 	animation-timing-function:ease-in-out;
 	animation-fill-mode:forwards;
-    content: "";
-    position:fixed;
+  content: "";
+  position:fixed;
 	z-index: 999;
-    width: 100%;
-    height: 100vh;
-    top: 50%;
+  width: 100%;
+  height: 100vh;
+  top: 50%;
 	left:0;
-    transform: scaleY(1);
-    background-color:#182578;/*伸びる背景色の設定*/
+  transform: scaleY(1);
+  background-color:#2857b1;
 }
 
 @keyframes PageAnime2{
-	0% {
-		transform-origin:bottom;
+  0% {
+    transform-origin:bottom;
 		transform:scaleY(1);
 	}
+  
 	100% {
-		transform-origin:bottom;
+    transform-origin:bottom;
 		transform:scaleY(0);
 	}
 }
 
-/*画面遷移の後現れるコンテンツ設定*/
 #container{
-	opacity: 0;/*はじめは透過0に*/
-    position: relative;
-    z-index: 1;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
 }
 
-/*bodyにappearクラスがついたら出現*/
 body.appear #container{
-	animation-name:PageAnimeAppear;
+  animation-name:PageAnimeAppear;
 	animation-duration:1s;
 	animation-delay:0.2s;
 	animation-fill-mode:forwards;
@@ -490,12 +467,13 @@ body.appear #container{
 }
 
 @keyframes PageAnimeAppear{
-	0% {
-	opacity: 0;
+  0% {
+    opacity: 0;
 	}
+  
 	100% {
-	opacity: 1;
-}
+    opacity: 1;
+  }
 }
 
 /*===========================================================*/
