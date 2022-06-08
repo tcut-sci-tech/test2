@@ -37,7 +37,7 @@ h3 {
 h4 {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
   font-weight: 800;
   color: #2857b1;
@@ -46,7 +46,7 @@ h4 {
 BL {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
   font-weight: 800;
   color: #000;
@@ -55,7 +55,7 @@ BL {
 SAT {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
   font-weight: 800;
   color: #0000ff;
@@ -64,7 +64,7 @@ SAT {
 SUN {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
   font-weight: 800;
   color: #ff0000;
@@ -73,14 +73,14 @@ SUN {
 h5 {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 35px;
+  font-size: 30px;
   text-align: left;
   font-weight: 800;
   color: #00a7eb;
 }
 
 ku {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 500;
   color: #000;
 }
@@ -97,7 +97,7 @@ a {
 ul {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: #000;
 }
@@ -105,7 +105,7 @@ ul {
 txt1 {
   margin: 0 0 0 0;
   position: relative;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: #000;
 }
@@ -113,7 +113,7 @@ txt1 {
 txt3{
   margin: 0 0 0 0;
   position: relative;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   color: #000;
 }
@@ -134,7 +134,7 @@ img{
 }
 
 #header h1{
-  font-size: 30px;
+  font-size: 35px;
   position: absolute;
   top: 15px;
   left:50%;
