@@ -7,116 +7,657 @@ body {
   padding: 0;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
 }
 
-#global-navi {
-  background:#2857b1;
-  position: fixed;
-  top: 0;
-  right: 0px;
-  width: 100%;
+a{
+	color: #333;
+	text-decoration: none;
+    outline: none;
 }
 
-#wrapper nav ul li{
-  display:inline-block;
-  font-size: 20px;
-  padding:  30px 20px 25px 28px;
+img{
+    width: 100%;
+    height: auto;
 }
 
-#wrapper nav ul li a{
-  color: #fff;
+#container{
+    overflow-x: hidden;
 }
 
-@media screen and (max-width: 600px) {
-  #wrapper nav {
+/*---------- ヘッダー ---------- */
+#header{
+  background:#fff;
+}
+
+#header h1{
+  font-size: 2.5vw;
+  position: absolute;
+  top: 25px;
+  left:50%;
+  transform: translateX(-50%);
+  color:#2857b1;
+}
+
+#g-nav ul{
+    display: flex;
+    padding: 0 0 0 5%;
+}
+
+#g-nav ul li{
+  letter-spacing: 0.1em;
+    white-space: nowrap;
+}
+
+#g-nav ul li:last-child{
+     display: none;   
+}
+
+#g-nav ul li a{
+    display: block;
+    padding:6px 15px;
+}
+
+#g-nav ul{
+    display: block;
+    padding: 0;
+}
+   
+#g-nav ul li a{
+    padding:6px 15px;
+}
+
+#header ul#utility-navi{
     position: fixed;
-    top: 0;
-    right: -300px;
-    width: 300px;
-    height: 100%;
-    padding-top: 50px;
-    background:#2857b1;
-    font-size: 16px;
-    box-sizing: border-box;
-    z-index: 2
-  }
-  
-  #wrapper nav ul li {
-    display:block;
-    padding: 20px 28px;
-  }
-  
-  #wrapper nav ul li a {
-    text-decoration: none;
+    top:0;
+    right:0;
+    z-index: 999;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+#header ul#utility-navi li{
+    text-align: center;
+}
+
+#header ul#utility-navi li span{
+    display: block;
+}
+
+#header ul#utility-navi li a{
     color: #fff;
-  }
-  
-  #wrapper .btn-gnavi {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 24px;
-    z-index: 3;
-    box-sizing: border-box;
-    cursor: pointer;
-    -webkit-transition: all 400ms;
-    transition: all 400ms;
-  }
-  
-  #wrapper .btn-gnavi span {
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background: #000;
-    border-radius: 10px;
-    -webkit-transition: all 400ms;
-    transition: all 400ms;
-  }
-  
-  #wrapper .btn-gnavi span:nth-child(1) {
+    padding: 15px 0;
+    display: block;
+    width:100px;
+    transition: all .5s;
+}
+
+#header ul#utility-navi li img{
+    width:35%;
+}  
+
+#header ul#utility-navi li:first-child a{
+     background:#666;
+}
+
+#header ul#utility-navi li:first-child a:hover{
+     background:#888;   
+}
+
+#header ul#utility-navi li:last-child a{
+     background:#182578;
+}
+
+#header ul#utility-navi li:last-child a:hover{
+     background:#1e2f98;
+}
+
+/* lead */
+
+#lead{
+    position: relative;
+    padding: 150px 0 0 0;
+    height:100vh;
+    
+}
+
+#slider-area{
+    width:70%;
+    height: 70vh;
+    position: relative;
     top: 0;
-  }
-  
-  #wrapper .btn-gnavi span:nth-child(2) {
-    top: 10px;
-  }
-  
-  #wrapper .btn-gnavi span:nth-child(3) {
-    top: 20px;
-  }
-  
-  #wrapper .btn-gnavi.open {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-  
-  #wrapper .btn-gnavi.open span {
-    background: #fff;
-  }
-  
-  #wrapper .btn-gnavi.open span {
-    width: 24px;
-  }
-  
-  #wrapper .contents section p {
+    left:15%;    
+    z-index: -1;
+}
+
+#slider-area #slider{
+    width:100%;
+    height:70vh;
+}
+
+#lead h2.heading{
+     position: absolute;
+    top:200px;
+     right:10%;
+}
+
+#lead .lead{
+     position: absolute;
+    top:320px;
+     right:4%;
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    line-height: 1.6;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+}
+
+#lead .lead span{
+     display: block; 
+    padding: 100px 0 0 0;
+}
+
+/* new */
+
+#news{
     position: absolute;
+    left: 0;
+    bottom: 0;
+    background:#fff;
+    width:40%;
+    z-index: 2;
+    padding: 40px;
+}
+
+#news h2{
+    position: relative;
+    font-size:1.2rem;
+    margin: 0 0 30px 0;
+}
+
+#news h2::before{
+    content:'';
+    position: absolute;
+    width:30px;
+    height: 1px;
+    background: #182578;
+    left:0;
+    bottom:-5px;
+}
+
+#news li{
+    margin:0 0 10px 0;
+}
+
+#news li a{
+    transition: all .3s;
+}
+
+#news li a:hover{
+     background:#efefef;
+}
+
+#news li time{
+    display: inline-block;
+    padding:0 20px 0 0;  
+    font-size:0.8rem;
+    color: #999;
+}
+
+@media screen and (max-width:1200px) {
+    #lead .lead{
+        font-size:1.8rem;
+        right: 2.5%;
+    }
+    #news{
+        width:50%;
+    } 
+}
+
+@media screen and (max-width:960px) {
+    #lead .lead{
+        font-size:1.6rem;
+        right: 3%;
+    }
+    #news{
+        padding: 20px 30px;
+    }
+    #news li time{
+        display: block;
+    }  
+}
+
+@media screen and (max-width:768px) {
+#slider-area {
+    width: 74%;
+    height: 90vh;
+    left: 0;
+    }
+    #slider-area #slider{
+    height: 90vh;
+}
+    
+#lead h2.heading{
+    top: 160px;
+}
+    
+#lead{
+    padding:100px 0 0 0;
+}
+    
+#lead .lead{
+    right:7%;
+    top:260px;
+}
+
+#news{
+    width:100%;
+    bottom:-200px;
+}
+}
+
+@media screen and (max-width:550px) {
+
+#lead .lead {
+    font-size: 1.3rem;
+    right:5%;
+
+} 
+}
+
+@media screen and (max-width:350px) {
+#lead .lead {
+    right:2%;
+} 
+    
+}
+
+/* service */
+
+#service{
+    position: relative;
+    text-align: center;
+    padding: 100px 0 0 0;
+    
+}
+
+#service header{
+    background:#182578;
+    color: #fff;
+    width:90%;
+    padding: 50px 0 100px 0;
+    z-index: 1;
+}
+
+#service header h2{
+    font-size: 1.3rem;
+    margin: 0 0 20px 0;
+    letter-spacing: 0.1em;
+}
+
+#service header p{
+    margin: 0 0 30px 0;   
+}
+
+#service header p br{
+     display: none;   
+}
+
+#service .service-area{
+    background:#fff;
+    padding: 70px;
+    width:70%;
+    position: relative;
+    top:-50px;
+    left: 10%;
+    z-index: 2;
+}
+
+#service .service-area ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+/* スマホ表示用。flipDownを指定している親要素に指定しないとうまく動かない*/
+    transform:  translate3d(0, 0, 0);
+}
+
+#service .service-area ul li{
+    opacity: 0;
+    width:22%;
+    padding: 0 0 50px 0;
+}
+
+#service .service-area ul li a{
+    display: block;
+}
+
+@media screen and (max-width:960px) {
+    #service header{
+        width:100%;
+    }
+    #service .service-area{
+        width:80%;
+        left:10%;
+        padding: 80px 20px 30px 20px;
+    }
+#service .service-area ul li{
+    width:40%;
+    }   
+
+#service header p br{
+     display:block;   
+}
+}
+
+@media screen and (max-width:768px) {
+    #service{
+        padding: 200px 0 0 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #service .service-area{
+    width:90%;
+    left:5%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #service .service-area{
+    width:100%;
+    left:0;
+    font-size: 0.9rem;
+}
+    
+}
+
+@charset "utf-8";
+/*===========================================================*/
+/*機能編  4-2-6 背景色が伸びる（中央から上下）*/
+/*===========================================================*/
+
+
+/*========= ローディング画面のためのCSS ===============*/
+#splash {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background:#182578;
+	z-index: 9999999;
+	text-align:center;
+	color:#fff;
+}
+
+#splash-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+}
+
+/*========= 画面遷移のためのCSS ===============*/
+
+/*画面遷移アニメーション*/
+.splashbg1,
+.splashbg2{
+    display: none;
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear .splashbg1,
+body.appear .splashbg2{
+	display:block;
+}
+
+/*上に消えるエリア*/
+body.appear .splashbg1{
+	animation-name:PageAnime;
+	animation-duration:1.4s;
+	animation-timing-function:ease-in-out;
+	animation-fill-mode:forwards;
+    content: "";
+    position:fixed;
+	z-index: 999;
+    width: 100%;
+    height: 100vh;
+    bottom:50%;
+	left:0;
+    transform: scaleY(1);
+    background-color:#182578;/*伸びる背景色の設定*/
+}
+
+@keyframes PageAnime{
+	0% {
+		transform-origin:top;
+		transform:scaleY(1);
+	}
+
+	100% {
+		transform-origin:top;
+		transform:scaleY(0);
+	}
+}
+
+/*下に消えるエリア*/
+body.appear .splashbg2{
+    animation-name:PageAnime2;
+	animation-duration:1.4s;
+	animation-timing-function:ease-in-out;
+	animation-fill-mode:forwards;
+    content: "";
+    position:fixed;
+	z-index: 999;
+    width: 100%;
+    height: 100vh;
     top: 50%;
+	left:0;
+    transform: scaleY(1);
+    background-color:#182578;/*伸びる背景色の設定*/
+}
+
+@keyframes PageAnime2{
+	0% {
+		transform-origin:bottom;
+		transform:scaleY(1);
+	}
+	100% {
+		transform-origin:bottom;
+		transform:scaleY(0);
+	}
+}
+
+/*画面遷移の後現れるコンテンツ設定*/
+#container{
+	opacity: 0;/*はじめは透過0に*/
+    position: relative;
+    z-index: 1;
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear #container{
+	animation-name:PageAnimeAppear;
+	animation-duration:1s;
+	animation-delay:0.2s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+@keyframes PageAnimeAppear{
+	0% {
+	opacity: 0;
+	}
+	100% {
+	opacity: 1;
+}
+}
+
+/*===========================================================*/
+/*機能編  5-1-21 クリックしたら円形背景が拡大（右下から）*/
+/*===========================================================*/
+/*========= ナビゲーションのためのCSS ===============*/
+#g-nav.panelactive{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+	top: 0;
+	width:100%;
+    height: 100vh;
+}
+
+/*丸の拡大*/
+.circle-bg{
+    position: fixed;
+	z-index:3;
+    /*丸の形*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #182578;
+    /*丸のスタート位置と形状*/
+	transform: scale(0);/*scaleをはじめは0に*/
+	right:-50px;
+    bottom:-50px;
+    transition: all .6s;/*0.6秒かけてアニメーション*/
+}
+
+.circle-bg.circleactive{
+	transform: scale(50);/*クラスが付与されたらscaleを拡大*/
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav-list{
+    display: none;/*はじめは表示なし*/
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999; 
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#g-nav.panelactive #g-nav-list{
+     display: block; /*クラスが付与されたら出現*/
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+	opacity: 0;/*はじめは透過0*/
+    /*ナビゲーション天地中央揃え※レイアウトによって調整してください。不必要なら削除*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*背景が出現後にナビゲーションを表示*/
+#g-nav.panelactive ul {
+    opacity:1;
+}
+
+/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
+#g-nav.panelactive ul li{
+animation-name:gnaviAnime;
+animation-duration:1s;
+animation-delay:.2s;/*0.2 秒遅らせて出現*/
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+
+/*リストのレイアウト設定*/
+#g-nav li{
+	text-align: center; 
+	list-style: none;
+    margin: 0 0 10px 0;
+}
+
+#g-nav li a{
+	color: #fff;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+
+@keyframes gnaviAnime{
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+/*===========================================================*/
+/*機能編  5-2-1　3本線が×に*/
+/*===========================================================*/
+
+
+.openbtn{
+    display: none;
+}
+
+.openbtn{
+    display: block;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 9999;/*ボタンを最前面に*/
+	cursor: pointer;
+    width: 94px;
+    height:94px;
+    background:#182578;
+}
+	
+/*×に変化*/	
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 23px;
+    height: 3px;
+    border-radius: 2px;
+	background-color: #fff;
+  	width: 45%;
+  }
+
+.openbtn span:nth-of-type(1) {
+	top:33px;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:46px;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:58px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 41px;
+    left: 28px;
+    transform: translateY(6px) rotate(-45deg);
     width: 30%;
-    line-height: 1.4;
-    font-size: 20px;
-    color: #fff;
-    text-shadow: 0 0 6px;
-  }
-  
-  #wrapper .contents section:nth-child(odd) p {
-    left: 10%
-  }
-  
-  #wrapper .contents section:nth-child(even) p {
-    right: 10%
-  }
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 52px;
+    left: 28px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
 }
